@@ -8,4 +8,4 @@ Solusi : Menggunakan NodeJS ke Github API untuk dapetin info profil
 * [x] Connnect Github API
 * [x] Read the data
 * [x] Parse the data
-* [ ] Print the data out
+* [x] Print the data out !
