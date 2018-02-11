@@ -1,7 +1,3 @@
-//Masalah : Kita butuh suatu cara untuk melihat profil Instagram
-//Solusi : Menggunakan NodeJS ke IG API untuk dapetin info profil
-
-//TODO: [x] Connnect IG API
 const https = require('https');
 
 const options = {
@@ -13,9 +9,19 @@ const options = {
         'user-agent': 'nodejs'
     }
 }
-
-let request = https.request(options, (res) => {
-    console.log('Got response: ' + res.statusCode);
+// TODO: [x] Read the data
+let request = https.request(options, (response) => {
+    let body = '';
+    response.on('data', (data) => {
+        body = body + data;
+    })
+    response.on('end', () => {
+        console.log(body);
+        
+    })
+    // TODO: Parse the data
+    // Convert String to JSON
+    // TODO: Print the data out
 })
 
 request.end();
@@ -23,7 +29,3 @@ request.end();
 request.on('error', (e) => {
     console.log(e);
 })
-
-//TODO: Read the data
-//TODO: Parse the data
-//TODO: Print the data out

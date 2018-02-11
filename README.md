@@ -1,8 +1,11 @@
+# Github Profiler
 
-# Masalah : Kita butuh suatu cara untuk melihat profil Instagram
-# Solusi : Menggunakan NodeJS ke IG API untuk dapetin info profil
+Masalah : Kita butuh suatu cara untuk melihat profil Instagram
+Solusi : Menggunakan NodeJS ke Github API untuk dapetin info profil
 
-* [x] Connnect IG API
-* Read the data
-* Parse the data
-* Print the data out
+## TODO
+
+* [x] Connnect Github API
+* [x] Read the data
+* [ ] Parse the data
+* [ ] Print the data out
