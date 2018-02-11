@@ -1,5 +1,7 @@
 const profile = require('./profile.js');
 
-profile.get('panjiggm');
-profile.get('yofri');
-profile.get('rizafahmi');
+let profiles = process.argv.slice(2);
+profiles.map(user => {
+    return profile.get(user);
+})
+
