@@ -7,5 +7,5 @@ Solusi : Menggunakan NodeJS ke Github API untuk dapetin info profil
 
 * [x] Connnect Github API
 * [x] Read the data
-* [ ] Parse the data
+* [x] Parse the data
 * [ ] Print the data out
